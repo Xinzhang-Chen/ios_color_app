@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		18E110A1294826CA003AFF6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E110A0294826CA003AFF6A /* AppDelegate.swift */; };
 		18E110A3294826CA003AFF6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E110A2294826CA003AFF6A /* SceneDelegate.swift */; };
-		18E110A5294826CA003AFF6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E110A4294826CA003AFF6A /* ViewController.swift */; };
 		18E110A8294826CA003AFF6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E110A6294826CA003AFF6A /* Main.storyboard */; };
 		18E110AA294826CF003AFF6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E110A9294826CF003AFF6A /* Assets.xcassets */; };
 		18E110AD294826CF003AFF6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E110AB294826CF003AFF6A /* LaunchScreen.storyboard */; };
+		18E110B5294828CF003AFF6A /* ColorsTableVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E110B4294828CF003AFF6A /* ColorsTableVCViewController.swift */; };
+		18E110B729482D39003AFF6A /* ColorDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E110B629482D39003AFF6A /* ColorDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18E1109D294826CA003AFF6A /* ios_color_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_color_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E110A0294826CA003AFF6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E110A2294826CA003AFF6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18E110A4294826CA003AFF6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18E110A7294826CA003AFF6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18E110A9294826CF003AFF6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E110AC294826CF003AFF6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18E110AE294826CF003AFF6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E110B4294828CF003AFF6A /* ColorsTableVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableVCViewController.swift; sourceTree = "<group>"; };
+		18E110B629482D39003AFF6A /* ColorDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				18E110A0294826CA003AFF6A /* AppDelegate.swift */,
 				18E110A2294826CA003AFF6A /* SceneDelegate.swift */,
-				18E110A4294826CA003AFF6A /* ViewController.swift */,
+				18E110B4294828CF003AFF6A /* ColorsTableVCViewController.swift */,
+				18E110B629482D39003AFF6A /* ColorDetailVC.swift */,
 				18E110A6294826CA003AFF6A /* Main.storyboard */,
 				18E110A9294826CF003AFF6A /* Assets.xcassets */,
 				18E110AB294826CF003AFF6A /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E110A5294826CA003AFF6A /* ViewController.swift in Sources */,
 				18E110A1294826CA003AFF6A /* AppDelegate.swift in Sources */,
+				18E110B729482D39003AFF6A /* ColorDetailVC.swift in Sources */,
+				18E110B5294828CF003AFF6A /* ColorsTableVCViewController.swift in Sources */,
 				18E110A3294826CA003AFF6A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
