@@ -8,11 +8,18 @@
 import UIKit
 
 class ColorsTableVCViewController: UIViewController  {
+    
+    var listOfColors: [UIColor] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupColors()
+    }
+    
+    func setupColors() {
+        for _ in 0..<50 {
+            listOfColors.append(generateColor())
+        }
     }
     
     func generateColor() -> UIColor {
@@ -20,21 +27,31 @@ class ColorsTableVCViewController: UIViewController  {
         return color
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! ColorDetailVC
+        destVC.color = sender as? UIColor
+    }
+    
 }
 
 extension ColorsTableVCViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        30
+        return listOfColors.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let newCell = UITableViewCell()
-        newCell.backgroundColor = self.generateColor()
+        
+        guard let newCell = tableView.dequeueReusableCell(withIdentifier: "ColorCell") else {
+            return UITableViewCell()
+        }
+        let color = listOfColors[indexPath.row]
+        newCell.backgroundColor = color
         return newCell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "ToColorDetailVC", sender: nil)
+        let color = listOfColors[indexPath.row]
+        performSegue(withIdentifier: "ToColorDetailVC", sender: color)
     }
 }
